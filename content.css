@@ -1,0 +1,75 @@
+.informenter-marker-hide { 
+ position: absolute; 
+ display: none; 
+}
+
+.informenter-marker-show { 
+ min-width: 20px !important;
+ max-width: 20px !important;
+ min-height: 20px !important;
+ max-height: 20px !important;
+ position: absolute; 
+ z-index: 999998; 
+ cursor: pointer;
+}
+
+#informenter-menu { 
+ width: auto;
+ text-align: start;
+ position: absolute !important; 
+ z-index: 999999; 
+ max-width: 600px !important;
+ line-height: 100%;
+ background-color: #fff; 
+ color: #000;
+ font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+ font-size: 10pt;
+ padding: 5px 0px; 
+ border: 1px solid #c8c5c2;
+}
+
+#informenter-menu * {
+ position: static !important; 
+}
+
+#informenter-menu hr { 
+ background-color:#c8c5c2 !important; 
+ height: 1px !important;
+ border: none !important;
+ margin: 5px 0px !important; 
+ display: block !important;
+}
+
+.informenter-menu-item, .informenter-menu-item-to-add, .informenter-menu-item-to-add-disabled {
+ margin: 0px;
+ padding: 0.5em 1.5em;
+ cursor: pointer;
+ white-space: nowrap;
+ -moz-user-select: none;
+ user-select: none;
+ border: 1px solid #fff; 
+ overflow: hidden;
+}
+
+.informenter-menu-item-to-add-disabled {
+ color: #888; cursor: not-allowed;
+}
+
+.informenter-menu-item:hover, .informenter-menu-item-to-add:hover, .informenter-menu-item:focus {
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;  
+  outline: none;   
+}
+
+.informenter-menu-item-below {
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;  
+  outline: none;   
+}
+
+.informenter-macro-bold { font-weight: bold !important; }
+.informenter-macro-big { font-size: 150% !important; }
+.informenter-macro-red { color: #f00 !important; }
+.informenter-macro-green { color: #00b900 !important; }
+.informenter-macro-blue { color: #00f !important; }
+

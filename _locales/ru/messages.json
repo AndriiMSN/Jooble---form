@@ -1,0 +1,89 @@
+{
+   "extension_description": {
+      "message": "Помощник в заполнении текстовых полей"
+   },
+   "marker_menu_add_to_profile": {
+      "message": "Добавить в профиль"
+   },
+   "marker_menu_add_to_profile_hint": {
+      "message": "Нажмите Ctrl чтобы добавить наверх"
+   },
+   "marker_right_click_hint": {
+      "message": "Правый клик - сместить маркер"
+   },
+   "new_profile_example_line_1": {
+      "message": "Мое имя"
+   },
+   "new_profile_example_line_2": {
+      "message": "Мой адрес"
+   },
+   "new_profile_example_line_3": {
+      "message": "Мой телефон"
+   },
+   "new_profile_prefix": {
+      "message": "Профиль №@@@"
+   },
+   "options_button_delete_profile": {
+      "message": "Удалить профиль"
+   },
+   "options_button_export_profiles": {
+      "message": "Экспортировать профили"
+   },
+   "options_button_import_profiles": {
+      "message": "Импортировать профили"
+   },
+   "options_button_new_profile": {
+      "message": "Новый профиль"
+   },
+   "options_confirmation_of_delete": {
+      "message": "Удалить '@@@'?"
+   },
+   "options_hint_1": {
+      "message": "Одна строка будет одним пунктом меню"
+   },
+   "options_hint_2": {
+      "message": "Используйте ## чтобы разделить текст для ввода и название пункта меню"
+   },
+   "options_hint_3": {
+      "message": "Используйте @@ для разрыва строк в многострочных полях ввода"
+   },
+   "options_hint_4": {
+      "message": "Используйте --- в начале строки чтобы вставить разделитель меню"
+   },
+   "options_hint_5": {
+      "message": "Используйте ~~ чтобы разделить текст для вставки в несколько полей"
+   },
+   "options_label_select_file": {
+      "message": "Выберите файл для импорта"
+   },
+   "options_warning_size": {
+      "message": "Внимание: используется @@@% пространства данных."
+   },
+   "popup_menu_enabled": {
+      "message": "Включен"
+   },
+   "popup_menu_options": {
+      "message": "Опции ..."
+   },
+   "trial_buy": {
+      "message": "Купить на сайте Google"
+   },
+   "trial_license_1": {
+      "message": "сейчас - бесплатная пробная версия"
+   },
+   "trial_license_2": {
+      "message": "сейчас - срок действия истек"
+   },
+   "trial_license_3": {
+      "message": "сейчас - нет"
+   },
+   "trial_license_absent": {
+      "message": "срок действия истек"
+   },
+   "trial_license_check": {
+      "message": "Проверить лицензию"
+   },
+   "unknown_browser": {
+      "message": "Неизвестный браузер"
+   }
+}

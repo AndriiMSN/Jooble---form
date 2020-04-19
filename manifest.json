@@ -1,0 +1,63 @@
+{  "version": "4.0",
+   "background": {
+      "scripts": [ "api.js", "chrome.js", "background.js" ]
+   },
+   "browser_action": {
+      "browser_style": false,
+      "default_icon": "img/jooble.png",
+      "default_popup": "popup.htm",
+      "default_title": "Jooble helper"
+   },
+   "commands": {
+      "insert-menu-item-1": {
+         "description": "Insert menu item #1",
+         "suggested_key": {
+            "default": "Ctrl+Shift+1"
+         }
+      },
+      "insert-menu-item-2": {
+         "description": "Insert menu item #2",
+         "suggested_key": {
+            "default": "Ctrl+Shift+2"
+         }
+      },
+      "insert-menu-item-3": {
+         "description": "Insert menu item #3",
+         "suggested_key": {
+            "default": "Ctrl+Shift+3"
+         }
+      },
+      "show-inputs-menu-0": {
+         "description": "Show  menu",
+         "suggested_key": {
+            "default": "Ctrl+Shift+0"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "run_at": "document_idle",
+      "css": [ "content.css" ],
+      "js": [ "api.js", "content.js","contentN.js" ],
+      "matches": [ "\u003Call_urls>", "https://*.jooble.org/*", "https://jooblework.knack.com/*" ]
+   } ],
+   "default_locale": "ru",
+   "description": "Powered by Andrii Mosin",
+   "icons": {
+      "16": "img/jooble.png",
+      "48": "img/joobleB.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuKOwiKBWtuYEUyUlY6NKE6/DfInVftFmFbpzFHf/kjY/ygZn0adABprJBZPQ4Vnz5/0o9UKL1izsaEexD+bDTWutO9ckMHx0mMcG2FNplPA9SlJTys0ehFflMupOrzSAAoW4xYEZXB/FTvKTl95N1iLGKAJe3SKaPVtKUoDoDkRDVlh4D8yzw/+QRE5ushzAXV7rWCRembGAJ/Hvw1vFbz3n1bBO7rmfng+NhpAK6GwkQVyfwaez/4yxef2DEWUydKt01rwRkgDAmByIR86eC61tFMXIexZtuxdfMXMe5hfccvuPtH+68dcgbzb7uD7pEMmSZYl1hV2KaP/CxbG1nQIDAQAB",
+   "manifest_version": 2,
+   "name": "Jooble",
+   "oauth2": {
+      "client_id": "163699588702-rd0d7te3n1pbe47mct9ujn6147f90dju.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/chromewebstore.readonly" ]
+   },
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.htm"
+   },
+   "permissions": [ "storage", "activeTab", "contextMenus", "downloads", "clipboardRead", "clipboardWrite", "identity", "https://www.googleapis.com/" ],
+   "web_accessible_resources": [ "img/informenter-marker-1.png", "img/informenter-marker-2.png" ]
+}

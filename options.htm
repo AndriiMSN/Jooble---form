@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"><link rel="stylesheet" href="options.css"/>
+<title>Jooble helper</title>
+</head>
+<body>
+<div id="wrap">	
+<div id="tools">	
+<select id="profile_list"></select>
+<input type="text" id="current_name" maxlength="64">
+<button id="to_del_1">_Delete Profile_</button>
+<button id="to_add">_New Profile_</button>
+<button id="to_del_2">_Delete ???_</button>
+
+<span id="switch"></span>
+
+<button id="button_export" class="h">_Export profiles_</button>
+<span id="spacer_1" class="h">&nbsp;</span>
+<span id="label_import" class="h">_Select file for import:</span>
+<input id="file_import" type='file' accept='text/plain' class="h">
+<button id="button_import" class="h" disabled>_Import profiles_</button>
+</div>
+<br><br>
+<div id="editor">	
+<textarea id="current_menu"></textarea>
+<div id="hints">
+<ul>
+	<li id="hint_1">_One line is one menu item</li>
+	<li id="hint_2">_Use ## to separate input text and menu item name</li>
+	<li id="hint_3">_Use @@ to break line in multiline editboxes</li>
+	<li id="hint_4">_Use --- at line start to insert menu separator</li>
+	<li id="hint_5">_Use ~~ to</li>
+	
+	<li><span id="macro_gp">$GeneratePassword$</span>, 
+	<span id="macro_lp">$LastPassword$</span>, 
+	<a href="http://firefoxer.ru/informenter+.htm?h#GP" target="_blank">???</a></li>
+	
+	<li><span id="macro_big">$Big$</span>, 
+	<span id="macro_bold">$Bold$</span>, 
+	<span id="macro_red">$Red$</span>,
+	<span id="macro_green">$Green$</span>,
+	<span id="macro_blue">$Blue$</span>,
+	<a href="http://firefoxer.ru/informenter+.htm?h#Big" target="_blank">???</a></li>
+	
+	<li><span id="macro_random_text">$RandomText,,$</span> 
+	<a href="http://firefoxer.ru/informenter+.htm?h#RandomText" target="_blank">???</a></li>
+	
+	<li><span id="macro_old_text">$OldText$</span> 
+	<a href="http://firefoxer.ru/informenter+.htm?h#OldText" target="_blank">???</a></li>
+	
+	<li><span id="macro_clipboard_text">$ClipboardText$</span> 
+	<a href="http://firefoxer.ru/informenter+.htm?h#ClipboardText" target="_blank">???</a></li>
+	
+</ul>
+<br>
+<button id="buy_link" class="h">_Buy on Google site_</button>
+<div id="warning">
+</div>
+</div>
+</div>
+</div>
+
+<script src="options.js"></script>
+</body>
+</html>

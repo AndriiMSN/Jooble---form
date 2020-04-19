@@ -1,0 +1,89 @@
+{
+   "extension_description": {
+      "message": "Advanced form filler"
+   },
+   "marker_menu_add_to_profile": {
+      "message": "Add to profile"
+   },
+   "marker_menu_add_to_profile_hint": {
+      "message": "Press Ctrl to add to top"
+   },
+   "marker_right_click_hint": {
+      "message": "Right click to shift"
+   },
+   "new_profile_example_line_1": {
+      "message": "My name"
+   },
+   "new_profile_example_line_2": {
+      "message": "My address"
+   },
+   "new_profile_example_line_3": {
+      "message": "My phone"
+   },
+   "new_profile_prefix": {
+      "message": "Profile №@@@"
+   },
+   "options_button_delete_profile": {
+      "message": "Delete profile"
+   },
+   "options_button_export_profiles": {
+      "message": "Export profiles"
+   },
+   "options_button_import_profiles": {
+      "message": "Import profiles"
+   },
+   "options_button_new_profile": {
+      "message": "New profile"
+   },
+   "options_confirmation_of_delete": {
+      "message": "Delete '@@@'?"
+   },
+   "options_hint_1": {
+      "message": "One line is one menu item"
+   },
+   "options_hint_2": {
+      "message": "Use ## to separate input text and menu item name"
+   },
+   "options_hint_3": {
+      "message": "Use @@ to break line in multiline editboxes"
+   },
+   "options_hint_4": {
+      "message": "Use --- at line start to insert menu separator"
+   },
+   "options_hint_5": {
+      "message": "Use ~~ to separate values for pasting into several fields"
+   },
+   "options_label_select_file": {
+      "message": "Select file for import"
+   },
+   "options_warning_size": {
+      "message": "Warning: @@@% of the data space are used."
+   },
+   "popup_menu_enabled": {
+      "message": "Enabled"
+   },
+   "popup_menu_options": {
+      "message": "Options ..."
+   },
+   "trial_buy": {
+      "message": "Buy on Google website"
+   },
+   "trial_license_1": {
+      "message": "now - free trial"
+   },
+   "trial_license_2": {
+      "message": "now - trial expired"
+   },
+   "trial_license_3": {
+      "message": "now - none"
+   },
+   "trial_license_absent": {
+      "message": "trial expired"
+   },
+   "trial_license_check": {
+      "message": "Check license"
+   },
+   "unknown_browser": {
+      "message": "Unknown browser"
+   }
+}

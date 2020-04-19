@@ -1,0 +1,91 @@
+html, body {
+ height: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+ font-size: 11pt;
+ direction: ltr;
+ /* test-direction: rtl !important; */
+}
+
+#wrap {
+ padding: 0.5em 1em 1em 1em;
+ background-color: #f9f9fa;
+ width: 100%;
+ height: 100%;
+ box-sizing: border-box;
+ display: flex;
+ flex-direction: column;
+}
+
+select, option, input, button, textarea, ul, li {
+ font-size: 100%; padding: 1px 3px;
+}
+
+select, input, button {
+ margin-top: 0.5em; margin-right: 0.5em;
+}
+
+textarea {
+ font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;	
+}
+
+ul {
+ margin: 0em 1.5em;	list-style-type: circle;
+}
+
+li {
+ margin-bottom: 0.5em;	
+}
+
+a { text-decoration: none; color: #00f; }
+
+li a { display: none; }
+li:hover a { display: inline; }
+
+.h {
+ display: none !important;	
+}
+
+.v { display: flex; }
+
+#macro_gp, #macro_lp, 
+#macro_big, #macro_bold, #macro_red, #macro_green, #macro_blue, 
+#macro_old_text, #macro_random_text, #macro_clipboard_text  { border-bottom: 1px dotted #00f; cursor: pointer; }
+
+#switch { color: #00f; cursor: pointer; padding: 1em; }
+
+#tools {
+ display: flex;
+ align-items: baseline;
+ flex-wrap: wrap;
+ flex-grow: 0;
+}
+#profile_list  { order: 1; }
+#current_name  { order: 2; }
+#to_del_1      { order: 3; }
+#to_add        { order: 4; }
+#to_del_2      { order: 5; }
+#switch        { order: 6; }
+#button_export { order: 8; }
+#spacer_1 	   { order: 9;  display: inline-block; width: 2em; }
+#label_import  { order: 10; }
+#file_import   { order: 11; }
+#button_import { order: 12; }
+
+#editor {
+ display: flex;
+ align-items: stretch;
+ justify-content: space-between;
+ flex-grow: 1;
+ flex-basis: 100%;
+}
+#current_menu { order: 1; flex-grow:4; flex-basis: 80%; }
+#hints        { order: 2; flex-grow:1; flex-basis: 20%; }
+
+#buy_link { color: #fff; background: linear-gradient(to top, #e56600, #eb860f); border: 1px solid #c46200; padding: 6px; margin: 0em 2em; border-radius: 2px; cursor: pointer; }
+#buy_link:hover { background: linear-gradient(to top, #ff7100, #ff920f); }
+#warning { margin: 1em 2em; color: #c00; }

@@ -1,0 +1,101 @@
+html { 
+ margin: 0px; 
+ padding: 0px; 
+}
+
+body { 
+ margin: 0px; 
+ padding: 5px 0px; 
+ background-color: #fff; 
+ color: #000;
+ font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+ font-size: 10pt;
+ direction: ltr;
+ /* direction: rtl !important; */
+}
+
+hr { 
+ background-color:#c8c5c2; 
+ height: 1px;
+ border: none;
+ margin: 5px 0px; 
+}
+
+.button, .wrap {
+ display: flex;
+ margin: 0px;
+ padding: 0.3em 0em;
+ border: 1px solid #fff;
+ cursor: pointer;
+ white-space: nowrap;
+ -moz-user-select: none;
+ user-select: none;
+}
+
+.button:hover, .marker-wrapper:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+
+.spacer {
+ display: inline-block;
+ text-align: center;
+ width: 2em;
+ order: 1;
+}
+
+.label {
+ order: 2;
+}
+
+.tail {
+ width: 2em;
+ order: 3;
+}
+
+.marker-wrapper {
+ display: inline-block;
+ text-align: center;
+ width: 30px;
+ margin: 0px;
+ 
+ padding: 3px;
+ border: 1px solid #fff;
+ cursor: pointer;
+ white-space: nowrap;
+ user-select: none;
+}
+
+.marker-wrapper img {
+ margin-top: 4px;
+}
+
+.marker-current{
+ border: 1px dotted #c8c5c2;
+}
+
+.license, .unknown {
+	color: #c00; 
+	text-align: center;
+	display: block !important;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.license-check {
+	border-bottom: 1px solid #c00;
+}
+
+.profile, .options, .enabled {}
+
+.marker-1{
+ order: 2;
+}
+
+.marker-2{
+ order: 3;
+}
+
+.marker-0{
+ order: 4;
+}
