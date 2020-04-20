@@ -48,11 +48,11 @@ document.body.appendChild(styleTable);
 
 //УСТАНОВКА БОРДЮРЫ НА ТЕКУЩЕЙ СТРОКЕ ТАБЛИЦЫ
 
-    window.setInterval(function(){
+    window.setTimeout(function(){
     var newEl = document.createElement('div');
     newEl.id = "current";
-    newEl.style.cssText = "display:block";
-    var tbl = document.querySelector("#field_136");
+    newEl.style.cssText = "display:none";
+    var tbl = document.querySelector("#knack-logo");
     
     if(tbl == null){
         return false
@@ -60,6 +60,13 @@ document.body.appendChild(styleTable);
     else{
     tbl.before(newEl);
     }
+},2000)
+window.setInterval (function(){
+    var newEl = document.querySelector('#current')
+    if(newEl == null){
+        return false
+    }
+    else{
     var elems = document.querySelectorAll('tr');             
     for(var i = 0; i < elems.length; i++) {
         (function(i) {
@@ -68,18 +75,20 @@ document.body.appendChild(styleTable);
                 elem.onclick = function() {
                     var id = elem.getAttribute("id");
                     console.log(id);
-                    $('tr').css('border', '1px solid #dbdbdb');
+                   // $('tr').css('border', '1px solid #dbdbdb');
+                    $('tr').css('background', 'none');
                     z.innerText = id;
                 };
                 setInterval(function (){    
                     if(elem.id === z.innerText & elem.id !== "") {
-                        $(elem).css('border', '3px solid black');
+                        //$(elem).css('border', '3px solid black');
+                        $(elem).css('background', 'aquamarine');
                     }
-                },10);
+                },100);
    
         })(i);
-    }
-    },0);
+    }}
+    },100);
 
  // ЖИВОЙ ПОИСК ПО ТАБИЦЕ   
 
