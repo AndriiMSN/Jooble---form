@@ -98,6 +98,39 @@ window.setTimeout(function () {
         }//else
 }, 4100)
 
+/*
+const sleep=(ms)=>new Promise((r)=>setTimeout(r, ms));
+
+const init=async()=>{
+    while($('#current').length === 0){
+        await sleep(1000);
+        $('#knack-logo').before(`<div id="current" style="display:none;"></div>`);
+    }
+    doIt();
+     setInterval(doIt, 1000);
+};
+
+const doIt=()=>{
+    const $zet = $('#current');
+    if($zet.length === 0)return false;
+
+    for(const elem of $('body').find('tr')){
+        const $el = $(elem);
+        if($el.attr('id') === $zet.text() && $el.attr('id') !== ''){
+            $el.css('background', 'aquamarine');
+        }
+        $el.click(({currentTarget})=>{
+            const id = $(currentTarget).attr('id');
+            console.log(id);
+            $('tr').css('background', 'none');
+            $zet.text(id);
+        });
+    }
+};
+
+window.onload=()=>init();
+*/
+
 // ЖИВОЙ ПОИСК ПО ТАБИЦЕ   
 
 window.setInterval(function () {
