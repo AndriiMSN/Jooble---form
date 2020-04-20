@@ -60,18 +60,28 @@ document.body.appendChild(styleTable);
     else{
     tbl.before(newEl);
     }
-},2000)
-window.setInterval (function(){
-    var newEl = document.querySelector('#current')
-    if(newEl == null){
+},4000)
+
+    
+    window.setTimeout(function(){
+    var z = document.getElementById('current');
+    if(z == null){
         return false
     }
     else{
-    var elems = document.querySelectorAll('tr');             
+  window.setInterval (function(){  
+    var elems = document.querySelectorAll('tr');     
+       
+                    
+                     
     for(var i = 0; i < elems.length; i++) {
         (function(i) {
             var elem = elems[i];
-            var z = document.getElementById('current');
+            if(elem.id === z.innerText & elem.id !== "") {
+                        //$(elem).css('border', '3px solid black');
+                        $(elem).css('background', 'aquamarine');
+                    }
+
                 elem.onclick = function() {
                     var id = elem.getAttribute("id");
                     console.log(id);
@@ -79,16 +89,12 @@ window.setInterval (function(){
                     $('tr').css('background', 'none');
                     z.innerText = id;
                 };
-                setInterval(function (){    
-                    if(elem.id === z.innerText & elem.id !== "") {
-                        //$(elem).css('border', '3px solid black');
-                        $(elem).css('background', 'aquamarine');
-                    }
-                },1000);
+                    
    
         })(i);
-    }}
-    },100);
+    }},1000)
+}
+    },3000)
 
  // ЖИВОЙ ПОИСК ПО ТАБИЦЕ   
 
