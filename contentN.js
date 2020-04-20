@@ -84,7 +84,7 @@ window.setInterval (function(){
                         //$(elem).css('border', '3px solid black');
                         $(elem).css('background', 'aquamarine');
                     }
-                },100);
+                },1000);
    
         })(i);
     }}
