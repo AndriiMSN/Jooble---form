@@ -1,3 +1,11 @@
+// При перевода сохранение ориг цвета текста
+
+var text = document.createElement('style');
+document.body.after(text);
+window.setTimeout(function () { 
+   text.innerText = "*{color:inherit;}"
+},5000)
+
 
 //КНОПКА КОПИРОВАТЬ НА САЙТЕ ПОИСКА ВАКАНСИЙ
 
